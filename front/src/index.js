@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header/header'
 import App from './App'
 import Paper from './components/Paper/paper'
+import About from './components/About/about'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,7 +17,8 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/paper" element={<Paper />} />
+        <Route path="/paper/:id" element={<Paper />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

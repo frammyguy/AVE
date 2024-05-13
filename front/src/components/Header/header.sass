@@ -9,11 +9,14 @@ header
         display: flex
         align-items: center
         color: white
-        img
-            height: 80px
-        h1
-            margin-left: 30px
-            font-size: 50px
+        a
+            text-decoration: none
+            color: white
+            img
+                height: 80px
+            h1
+                margin-left: 30px
+                font-size: 50px
     .header-links
         display: flex
         align-items: center
@@ -30,5 +33,42 @@ header
             background-color: #993c35
             border-radius: 20px
             padding: 0 5px
-        .modal-title
-            color: red
+.modal-dialog
+    .modal-content
+        background-color: #d7b2b0
+        .modal-header
+            border: none
+            .modal-title
+                font-weight: 700
+                font-size: 30px
+        .modal-body
+            border-bottom: 1px solid #dee2e6
+            border-top: 1px solid #dee2e6
+            .modal-data
+                display: flex
+                flex-direction: column
+                label
+                    font-size: 18px
+                    text-align: center
+                    font-weight: 600
+                    margin-top: 10px
+                input
+                    margin: 0 auto
+                    width: 300px
+                    border-radius: 20px
+                    border-width: 0
+                a
+                    text-align: center
+                    color: black
+                    font-size: 15px
+                    margin-top: 10px
+        .modal-footer
+            border: none
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            width: 50%
+            button
+                background-color: #993c35
+                border-color: #993c35
+                border-radius: 20px

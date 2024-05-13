@@ -5,10 +5,10 @@ import Shop from './components/Shop/shop'
 
 export default function App() {
     return (
-        <>
+        <div className='cont'>
             <Navbar/>
             <Clicker />
             <Shop />
-        </>
+        </div>
     );
 }

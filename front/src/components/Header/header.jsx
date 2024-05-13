@@ -14,25 +14,37 @@ export default function Header() {
     <header>
       <Modal show={show} onHide={handleClose} className="modal-wrap">
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Pieslēgties</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          <div className="modal-data">
+            <label htmlFor="logins">Logins</label>
+            <input type="text" id="logins" name="logins" />
+            <label htmlFor="parole">Parole</label>
+            <input type="password" id="parole" name="parole" />
+            <a href="/">aizmirsu paroli</a>
+          </div>       
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Ienākt
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Save Changes
+            Reģistrēties
           </Button>
         </Modal.Footer>
       </Modal>
-      <div class="header-wrap">
-        <img src={Logo} class="main_logo" alt="main_logo" />
-        <h1>AVE</h1>
+      <div className="header-wrap">
+        <a href="/">
+          <img src={Logo} className="main_logo" alt="main_logo" />
+        </a>
+        <a href="/">
+          <h1>AVE</h1>
+        </a>     
       </div>
-      <div class="header-links">
+      <div className="header-links">
         <a href="/">Galvenā</a>
-        <a href="/">Par mums</a>
+        <a href="/about">Par mums</a>
         <Button
           className="header-connect"
           variant="danger"
