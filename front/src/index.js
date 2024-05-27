@@ -7,7 +7,6 @@ import Paper from './components/Paper/paper'
 import About from './components/About/about'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import './index.sass';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
